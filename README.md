@@ -12,7 +12,13 @@ providing shipping details, and completing the purchase.
 Cypress, javascript, Node.js (which included npm), VS code
 
 **Summary of my tests**
-<<TB filled>>
+For the given requirements, I have written small simple tests instead of one big piece of code.
+I've also utilised commands.js file to create my own custom commands which I reused in different tests to simplify code.
+1_Login.cy.js - Logs in the user with valid credentials as per requirement
+2_FilterbyPrice.cy.js - Filters products on the inventory page by price(low to high)
+3_AddtoCart.cy.js - Adds the top 2 filtered products to cart 
+4_Checkout.cy.js - Initiates the checkout process, asks for checkout details and finishes checkout
+5_Logout.js - Logs the user out thus completing the test
 
 **Set Up (on your local)**
 1. Clone the repository to your local computer
@@ -31,14 +37,14 @@ A successful installation should give you the cypress version on querying 'npx c
 
 **Running the tests:**
 1. To open Cypress test runner and choose specific tests to run
-npx cypress open > E2E testing > Choose your browser (Chrome in my case) > Click on the specific test file in 'specs'
+**npx cypress open > E2E testing > Choose your browser (Chrome in my case) > Click on the specific test file in 'specs'**
 
 2. To run all tests together in Cypress test runner
-npx cypress open > E2E testing > Choose your browser (Chrome in my case) > Choose 'Run 5 specs' in specs
+**npx cypress open > E2E testing > Choose your browser (Chrome in my case) > Choose 'Run 5 specs' in specs**
 
 3. To run all tests in headless mode without test runner
-npx cypress run --spec "cypress/e2e/**/*"     
+**npx cypress run --spec "cypress/e2e/**/*"  **   
 
 4. To run specific tests only without test runner
-npx cypress run --spec "cypress/e2e/**/*" 
+**npx cypress run --spec "cypress/e2e/**/*" **
 
