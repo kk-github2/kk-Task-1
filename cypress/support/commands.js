@@ -36,3 +36,10 @@ Cypress.Commands.add('LoginUI', () => {
     cy.get('#login-button').click();
     cy.url().should('include', '/inventory.html') ;
   })
+
+  Cypress.Commands.add('FilterbyPriceAscending', () => {
+    cy.LoginUI();
+    cy.get('.product_sort_container').should('exist');
+    cy.get('.product_sort_container').select('lohi');
+    cy.get('.active_option').should('have.text', 'Price (low to high)')
+  })
