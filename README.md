@@ -48,3 +48,4 @@ A successful installation should give you the cypress version on querying 'npx c
 4. To run specific tests only without test runner
 **npx cypress run --spec "cypress/e2e/**/*" **
 
+![alt text](image.png)

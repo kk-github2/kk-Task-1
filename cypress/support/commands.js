@@ -35,6 +35,7 @@ Cypress.Commands.add('LoginUI', () => {
     cy.get('#password').type("secret_sauce");
     cy.get('#login-button').click();
     cy.url().should('include', '/inventory.html') ;
+    cy.log('User logged in successfully') ;
   })
 
   Cypress.Commands.add('FilterbyPriceAscending', () => {
@@ -42,4 +43,5 @@ Cypress.Commands.add('LoginUI', () => {
     cy.get('.product_sort_container').should('exist');
     cy.get('.product_sort_container').select('lohi');
     cy.get('.active_option').should('have.text', 'Price (low to high)')
+    cy.log('Products are now filtered by price - low to high');
   })
