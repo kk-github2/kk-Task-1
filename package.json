@@ -1,0 +1,15 @@
+{
+  "name": "task-1---saucedemo-website",
+  "version": "1.0.0",
+  "description": "KK PC task 1 cypress automation",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "KK",
+  "license": "ISC",
+  "@types/node": "^20.11.19",
+  "devDependencies": {
+    "cypress": "^13.13.0"
+  }
+}
