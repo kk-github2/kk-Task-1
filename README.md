@@ -23,7 +23,7 @@ I've also utilised commands.js file to create my own custom commands which I reu
 **Set Up (on your local)**
 1. Clone the repository to your local computer
 
-git clone https://github.com/kk-github2/kk-petcircle.git
+git clone https://github.com/kk-github2/kk-petcircle-Task-1.git
 
 2. If npm was not a part of  your Node.js install, Use the package manager npm to install dependencies:
 
